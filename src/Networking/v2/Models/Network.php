@@ -16,11 +16,22 @@ use OpenStack\Common\Transport\Utils;
  */
 class Network extends AbstractResource implements Listable, Retrievable, Creatable, Deletable
 {
+    /** @var string */
     public $id;
+
+    /** @var string */
     public $name;
+
+    /** @var bool */
     public $shared;
+
+    /** @var string */
     public $status;
+
+    /** @var array */
     public $subnets;
+
+    /** @var string */
     public $adminStateUp;
 
     protected $aliases = [
@@ -51,7 +62,7 @@ class Network extends AbstractResource implements Listable, Retrievable, Creatab
         $networksData = Utils::jsonDecode($response)['networks'];
 
         $networks = [];
-        foreach($networksData as $resourceData) {
+        foreach ($networksData as $resourceData) {
             $resource = $this->newInstance();
             $resource->populateFromArray($resourceData);
             $networks[] = $resource;

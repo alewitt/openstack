@@ -2,19 +2,19 @@
 
 |Name|PHP classes|API definition|Unit tests|Sample files|Integration tests|Documentation|
 |---|:--:|:--:|:--:|:--:|:--:|:--:|
-|Block Storage v2|||||||
+|Block Storage v2|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|
 |Compute v2|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|
 |Compute v2 exts|||||||
 |Data Processing v1|||||||
 |Database v1|||||||
-|Identity v2|&#10003;|&#10003;|||||
+|Identity v2|&#10003;|&#10003;|&#10003;||||
 |Identity v2 exts|||||||
 |Identity v3|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|
 |Identity v3 exts|||||||
-|Image v2|||||||
+|Images v2|||||||
 |Networking v2|||||||
 |Networking v2 exts|||||||
-|Object Storage v1|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;||
+|Object Storage v1|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|
 |Orchestration v1|||||||
 |Telemetry v2|||||||
 
@@ -29,7 +29,7 @@ visibility.
 
 ### API definitions
 
-This is the `Api.php` file for each service, which defines the contract between client and API. It outlines all of the 
+This is the `Api.php` and `Params.php` files for each service, which defines the contract between client and API. It outlines all of the 
 available API operations, along with parameters, methods, URL paths, etc. In order for this to be marked complete, it 
 must cover 100% of the remote API.
 
