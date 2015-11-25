@@ -125,7 +125,7 @@ abstract class Operator implements OperatorInterface
      */
     protected function getHttpBaseUrl()
     {
-        return $this->client->getBaseUrl();
+        return $this->client->getConfig('base_uri');
     }
 
     /**
