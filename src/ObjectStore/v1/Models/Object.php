@@ -64,7 +64,7 @@ class Object extends AbstractResource implements Creatable, Deletable, HasMetada
      */
     public function getPublicUri()
     {
-        return (string)$this->getHttpBaseUrl() . '/' . $this->containerName . '/' . $this->name;
+        return $this->getHttpBaseUrl() . '/' . $this->containerName . '/' . $this->name;
     }
 
     /**
